@@ -6,7 +6,7 @@ Space Station 14 это ремейк SS13, который работает на 
 
 ## Ссылки
 
-[Наш Discord](https://discord.gg/dC7qyawKQB) | [Основная вики русскоязычного коммьюнити](https://wiki.station14.ru) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Клиент без Steam](https://spacestation14.io/about/nightlies/) | [Основной англоязычный репозиторий](https://github.com/space-wizards/space-station-14) | [Основной русскоязычный репозиторий](https://github.com/space-syndicate/space-station-14)
+[Наш Discord](https://discord.gg/jCG9kdXyvf) | [Основная вики русскоязычного коммьюнити](https://wiki.station14.ru) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Клиент без Steam](https://spacestation14.io/about/nightlies/) | [Основной англоязычный репозиторий](https://github.com/space-wizards/space-station-14) | [Основной русскоязычный репозиторий](https://github.com/space-syndicate/space-station-14)
 
 ## Документация
 
@@ -14,7 +14,7 @@ Space Station 14 это ремейк SS13, который работает на 
 
 ## Контрибьют
 
-В случае если вы хотите добавить новый контент обсудите его необходимость на нашем сервере [Discord](https://discord.gg/dC7qyawKQB).
+В случае если вы хотите добавить новый контент обсудите его необходимость на нашем сервере [Discord](https://discord.gg/jCG9kdXyvf).
 
 ## Сборка
 
@@ -28,6 +28,6 @@ Space Station 14 это ремейк SS13, который работает на 
 
 Весь код репозитория лицензирован под [MIT](https://github.com/space-syndicate/space-station-14/blob/master/LICENSE.TXT).
 
-Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. 
+Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных.[Пример](https://github.com/ZettaProtocol/Sirena/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json) 
 
 Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
