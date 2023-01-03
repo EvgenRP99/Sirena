@@ -4,9 +4,9 @@
   markingCategory: HeadTop
   speciesRestriction: [Human] 
   sprites:
-  - sprite: Mobs/Customization/mouse_parts.rsi
+  - sprite: Sirena/Mobs/Customization/mouse_parts.rsi
     state: ears_mouse_outer
-  - sprite: Mobs/Customization/mouse_parts.rsi
+  - sprite: Sirena/Mobs/Customization/mouse_parts.rsi
     state: ears_mouse_inner
 
 - type: marking
@@ -15,5 +15,5 @@
   markingCategory: Tail
   speciesRestriction: [Human]
   sprites:
-  - sprite: Mobs/Customization/mouse_parts.rsi
+  - sprite: Sirena/Mobs/Customization/mouse_parts.rsi
     state: tail_mouse_wag 

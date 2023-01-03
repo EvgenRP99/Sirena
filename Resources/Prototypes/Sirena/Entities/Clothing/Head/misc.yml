@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatMouseEars
+  name: mouse ears
+  description: "SQUAK!"
+  components:
+  - type: Tag
+    tags: # ignore "WhitelistChameleon" tag
+      - DroneUsable
+  - type: Sprite
+    sprite: Sirena/Clothing/Head/Hats/mouseears.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Head/Hats/mouseears.rsi

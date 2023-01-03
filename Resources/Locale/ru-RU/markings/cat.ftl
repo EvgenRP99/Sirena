@@ -1,2 +1,2 @@
-marking-MouseEars = Мышиные ушки
-marking-MouseTail = Мышиный хвост
+marking-CatEars = Кошачьи ушки
+marking-CatTail = Кошачий хвост
