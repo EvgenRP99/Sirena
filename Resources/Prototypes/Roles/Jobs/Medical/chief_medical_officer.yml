@@ -16,6 +16,7 @@
   startingGear: CMOGear
   icon: "ChiefMedicalOfficer"
   requireAdminNotify: true
+  canBeAntag: false
   supervisors: job-supervisors-captain
   access:
   - Medical

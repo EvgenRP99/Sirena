@@ -33,7 +33,7 @@
 
 - type: markingPoints
   id: MobReptilianMarkingLimits
-  onlyWhitelisted: true
+  onlyWhitelisted: false
   points:
     Hair:
       points: 0

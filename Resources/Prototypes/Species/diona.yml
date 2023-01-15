@@ -31,7 +31,7 @@
 
 - type: markingPoints
   id: MobDionaMarkingLimits
-  onlyWhitelisted: true
+  onlyWhitelisted: false
   points:
     Head:
       points: 2

@@ -1,0 +1,16 @@
+- type: entity
+  id: Aphrodisiac_erp_ChemistryBottle
+  name: jar of aphrodisiac
+  description: Artecalcet-based drug. Stimulates sexual arousal.
+  parent: ChemistryEmptyBottle04
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Aphrodisiac_erp
+          Quantity: 50
+  - type: Tag
+    tags:
+    - Bottle
