@@ -1,0 +1,191 @@
+- type: reagent
+  id: Artecalcet_erp
+  name: reagent-name-artecalcet
+  desc: reagent-desc-artecalcet
+  physicalDesc: reagent-physical-desc-shiny
+  color: "#c0c0c0"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.75
+            
+- type: reagent
+  id: Arteicog_erp
+  name: reagent-name-arteicog
+  desc: reagent-desc-arteicog
+  physicalDesc: reagent-physical-desc-shiny
+  color: "#b0b7c6"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:AdjustReagent
+        reagent: Arteicog_erp
+        amount: 0.45
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Arteicog_erp
+          max: 0.5
+        reagent: Arteicog_erp
+        amount: -1
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Arteicog_art
+          max: 20
+        type: Local
+        visualType: Medium
+        messages: [ "arteicog-effect-1", "arteicog-effect-2", "arteicog-effect-3" ]
+        probability: 0.25
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Arteicog_art
+          min: 30
+        type: Local
+        visualType: Medium
+        messages: [ "arteicog-effect-4", "arteicog-effect-5", "arteicog-effect-6" ]
+        probability: 0.25
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Arteicog_art
+          min: 30
+        key: ForcedSleep
+        component: ForcedSleeping
+        refresh: false
+        type: Add
+    
+- type: reagent
+  id: Gadoiprinim_erp
+  name: reagent-name-gadoiprinim
+  desc: reagent-desc-gadoiprinim
+  physicalDesc: reagent-physical-desc-shiny
+  color: "#b0b7c6"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:AdjustReagent
+        reagent: Gadoiprinim_erp
+        amount: 0.45
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gadoiprinim_erp
+          max: 0.5
+        reagent: Gadoiprinim_erp
+        amount: -1
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "gadoiprinim-effect-1" ]
+        probability: 0.25
+
+- type: reagent
+  id: Vinikefastatin_erp
+  name: reagent-name-vinikefastatin
+  desc: reagent-desc-vinikefastatin
+  physicalDesc: reagent-physical-desc-shiny
+  color: "#b0b7c6"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:AdjustReagent
+        reagent: Vinikefastatin_erp
+        amount: 0.45
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Vinikefastatin_erp
+          max: 0.5
+        reagent: Vinikefastatin_erp
+        amount: -1
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "vinikefastatin-effect-1", "vinikefastatin-effect-2", "vinikefastatin-effect-3", "vinikefastatin-effect-4", "vinikefastatin-effect-5" ]
+        probability: 0.25
+
+- type: reagent
+  id: Aphrodisiac_erp
+  name: reagent-name-aphrodisiac
+  desc: reagent-desc-aphrodisiac
+  physicalDesc: reagent-physical-desc-silver
+  color: "#720031"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:AdjustReagent
+        reagent: Aphrodisiac_erp
+        amount: 0.45
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac_erp
+          max: 0.5
+        reagent: Aphrodisiac_erp
+        amount: -1
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac_erp
+          max: 15
+        visualType: Medium
+        messages: ["aphrodisiac-effect-1", "aphrodisiac-effect-2", "aphrodisiac-effect-3", "aphrodisiac-effect-4"]
+        probability: 0.25
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac_erp
+          min: 15
+          max: 30
+        visualType: Medium
+        messages: ["aphrodisiac-effect-5", "aphrodisiac-effect-6", "aphrodisiac-effect-7", "aphrodisiac-effect-8"]
+        probability: 0.25
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac_erp
+          min: 30
+          max: 100
+        visualType: Large
+        messages: ["aphrodisiac-effect-9", "aphrodisiac-effect-10", "aphrodisiac-effect-11", "aphrodisiac-effect-12"]
+        probability: 0.25
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac_erp
+          min: 100
+        visualType: Large
+        messages: ["aphrodisiac-effect-13", "aphrodisiac-effect-14", "aphrodisiac-effect-15"]
+        probability: 0.25
+      - !type:PopupMessage
+        type: Pvs
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac_erp
+          min: 100
+        visualType: Medium
+        messages: ["aphrodisiac-effect-16", "aphrodisiac-effect-17", "aphrodisiac-effect-18"]
+        probability: 0.3
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac_erp
+          min: 100
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac_erp
+          min: 100
+        key: ForcedSleep
+        component: ForcedSleeping
+        refresh: false
+        type: Add

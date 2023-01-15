@@ -1,0 +1,61 @@
+- type: reaction
+  id: Artecalcet_erp
+  reactants:
+    Aluminium:
+      amount: 2 
+    Silver:
+      amount: 3
+  products:
+    Artecalcet_erp: 5
+
+- type: reaction
+  id: Arteicog_erp
+  reactants:
+    Artecalcet_erp:
+      amount: 1
+    Radium:
+      amount: 1
+    Plasma:
+      amount: 5
+      catalyst: true
+  products:
+    Arteicog_erp: 2
+    
+- type: reaction
+  id: Gadoiprinim_erp
+  reactants:
+    Artecalcet_erp:
+      amount: 1
+    Potassium:
+      amount: 1
+    Plasma:
+      amount: 5
+      catalyst: true
+  products:
+    Gadoiprinim_erp: 2
+
+- type: reaction
+  id: Vinikefastatin_erp
+  reactants:
+    Artecalcet_erp:
+      amount: 1
+    Iron:
+      amount: 1
+    Plasma:
+      amount: 5
+      catalyst: true
+  products:
+    Vinikefastatin_erp: 2
+
+- type: reaction
+  id: Aphrodisiac_erp
+  reactants:
+    Artecalcet_erp:
+      amount: 1
+    TranexamicAcid:
+      amount: 1
+    Plasma:
+      amount: 5
+      catalyst: true
+  products:
+    Aphrodisiac_erp: 2
