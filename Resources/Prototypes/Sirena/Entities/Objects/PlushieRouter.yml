@@ -1,0 +1,20 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieRouter
+  name: router plushie
+  description: A very peculiar stuffed toy resembling a distribution machine. It even has zip-up randomized bluespace portals!
+  components:
+  - type: Sprite
+    state: PlushieRouter
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Sirena/PlushieRouter/router.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Sirena/PlushieRouter/router.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Sirena/PlushieRouter/router.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Sirena/PlushieRouter/router.ogg
