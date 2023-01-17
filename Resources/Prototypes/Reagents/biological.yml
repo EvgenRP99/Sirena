@@ -55,6 +55,13 @@
             Toxin: -2
           types:
             Bloodloss: -5
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: 4
   # Just in case you REALLY want to water your plants
   plantMetabolism:
   - !type:PlantAdjustWater
