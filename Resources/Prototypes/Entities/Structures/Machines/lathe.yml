@@ -407,6 +407,9 @@
       - CartridgeLightRifle
       - CartridgeCaselessRifleRubber
       - CartridgeLightRifleRubber
+      - CartridgeRifle
+      - CartridgeRifleHighVelocity
+      - CartridgeRiflePractice
       - CartridgeRifleRubber
       - TargetHuman
       - TargetSyndicate
