@@ -46,16 +46,3 @@
       catalyst: true
   products:
     Vinikefastatin_erp: 2
-
-- type: reaction
-  id: Aphrodisiac_erp
-  reactants:
-    Artecalcet_erp:
-      amount: 1
-    TranexamicAcid:
-      amount: 1
-    Plasma:
-      amount: 5
-      catalyst: true
-  products:
-    Aphrodisiac_erp: 2
