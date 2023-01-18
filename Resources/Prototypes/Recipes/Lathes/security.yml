@@ -93,6 +93,30 @@
     Steel: 5
 
 - type: latheRecipe
+  id: CartridgeRifle
+  result: CartridgeRifle
+  completetime: 2
+  materials:
+    Plastic: 10
+    Steel: 5
+    
+- type: latheRecipe
+  id: CartridgeRifleHighVelocity
+  result: CartridgeRifleHighVelocity
+  completetime: 2
+  materials:
+    Plastic: 10
+    Steel: 5
+    
+- type: latheRecipe
+  id: CartridgeRiflePractice
+  result: CartridgeRiflePractice
+  completetime: 2
+  materials:
+    Plastic: 10
+    Steel: 5
+
+- type: latheRecipe
   id: CartridgeRifleRubber
   result: CartridgeRifleRubber
   completetime: 2
