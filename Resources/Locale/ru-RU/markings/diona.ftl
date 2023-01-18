@@ -32,7 +32,11 @@ marking-DionaMeadowHeadTop-meadow = Диона, Луг
 marking-DionaMeadowHeadTop = Диона, Луг
 marking-DionaOakHead-oak = Диона, Дуб (Дерево)
 marking-DionaOakHead = Диона, Дуб (Дерево)
+<<<<<<< HEAD
 marking-DionaPalmHead-palm =  Диона, Пальма (Листья)
+=======
+marking-DionaPalmHead-palm = Диона, Пальма (Листья)
+>>>>>>> upstream/master
 marking-DionaPalmHead = Диона, Пальма (Листья)
 marking-DionaRootHead-root = Диона, Корень (Корни)
 marking-DionaRootHead = Диона, Корень (Корни)
@@ -49,8 +53,13 @@ marking-DionaSproutHeadSide = Диона, Росток
 marking-DionaVineHeadTop-vine = Диона, Лоза (Лоза)
 marking-DionaVineHeadTop = Диона, Лоза (Лоза)
 marking-DionaVinelHead-vinel = Диона, Лоза длинная (Лоза)
+<<<<<<< HEAD
 marking-DionaVinelHead =  Диона, Лоза длинная (Лоза)
 marking-DionaVinesHead-vines =  Диона, Лоза короткая (Лоза)
+=======
+marking-DionaVinelHead = Диона, Лоза длинная (Лоза)
+marking-DionaVinesHead-vines = Диона, Лоза короткая (Лоза)
+>>>>>>> upstream/master
 marking-DionaVinesHead = Диона, Лоза короткая (Лоза)
 marking-DionaWildflowerHead-wildflower = Диона, Полевые цветы (Цветы)
 marking-DionaWildflowerHead = Диона, Полевые цветы (Цветы)
