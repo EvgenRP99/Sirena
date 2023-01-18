@@ -18,6 +18,16 @@
         damage:
           types:
             Poison: 2
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -4
+          groups:
+            Brute: -0.5
+            Burn: -0.5
 
 - type: reagent
   id: CarpoToxin
@@ -44,7 +54,16 @@
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-burning-insides" ]
         probability: 0.33
-
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -8
+          groups:
+            Brute: -0.5
+            Burn: -0.5
 
 - type: reagent
   id: ChloralHydrate
@@ -77,6 +96,16 @@
         damage:
           types:
             Poison: 1.5
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -3
+          groups:
+            Brute: -0.5
+            Burn: -0.5
 
 - type: reagent
   id: Mold
@@ -106,6 +135,16 @@
           - Plague
           - TongueTwister
           - MemeticAmirmir
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -2
+          groups:
+            Brute: -0.5
+            Burn: -0.5
 
 - type: reagent
   id: PolytrinicAcid
@@ -225,7 +264,17 @@
         visualType: Large
         messages: [ "generic-reagent-effect-burning-insides" ]
         probability: 0.33
-
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -4
+          groups:
+            Brute: -0.5
+            Burn: -0.5
+            
 - type: reagent
   id: UnstableMutagen
   name: reagent-name-unstable-mutagen
@@ -318,6 +367,18 @@
             Brute: 2
             Toxin: 2
             Airloss: 2
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        - !type:ReagentThreshold
+          min: 45
+        damage:
+          types:
+            Poison: -1
+          groups:
+            Brute: -0.5
+            Burn: -0.5
       - !type:PopupMessage
         type: Local
         messages: [ "histamine-effect-light-itchiness" ]
@@ -374,7 +435,17 @@
         damage:
           types:
             Poison: 6
-
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -12
+          groups:
+            Brute: -0.5
+            Burn: -0.5
+            
 - type: reagent
   id: VentCrud
   name: reagent-name-vent-crud
@@ -392,7 +463,17 @@
         - !type:ChemCauseDisease ##Since this mostly just comes from the event you won't ingest that much
           causeChance: 0.6
           disease: VentCough
-
+        - !type:HealthChange
+          conditions:
+          - !type:OrganType
+            type: Slime
+          damage:
+            types:
+              Poison: -4
+          groups:
+            Brute: -0.5
+            Burn: -0.5
+            
 - type: reagent
   id: Corpium
   name: reagent-name-corpium
@@ -428,6 +509,16 @@
         damage:
           types:
             Poison: 2
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -4
+          groups:
+            Brute: -0.5
+            Burn: -0.5
       - !type:AdjustReagent
         conditions:
         - !type:OrganType
@@ -454,7 +545,17 @@
         damage:
           types:
             Poison: 6
-
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -12
+          groups:
+            Brute: -0.5
+            Burn: -0.5
+            
 - type: reagent
   id: Pax
   name: reagent-name-pax

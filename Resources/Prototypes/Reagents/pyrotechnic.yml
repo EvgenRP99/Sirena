@@ -156,7 +156,17 @@
             Poison: 1
       - !type:FlammableReaction
         multiplier: 0.4
-
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -2
+          groups:
+            Brute: -0.5
+            Burn: -0.5
+            
 - type: reagent
   id: Fluorosurfactant
   name: reagent-name-fluorosurfactant

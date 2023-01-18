@@ -128,6 +128,16 @@
         - !type:HasTag
           invert: true
           tag: Bee
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -4
+          groups:
+            Brute: -0.5
+            Burn: -0.5
 
 - type: reagent
   id: GroundBee

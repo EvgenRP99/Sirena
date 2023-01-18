@@ -22,12 +22,20 @@
         damage:
           types:
             Poison: -1
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: 2
     # TODO overdose: vomit, dizzy effect (drunkenness?)
   plantMetabolism:
     - !type:PlantAdjustToxins
       amount: -10
     - !type:PlantAdjustHealth
       amount: 1
+  
 
 - type: reagent
   id: Diphenhydramine
@@ -105,6 +113,18 @@
           types:
             Asphyxiation: 1
             Poison: 0.5
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        - !type:ReagentThreshold
+          min: 30
+        damage:
+          types:
+            Poison: -1
+          groups:
+            Brute: -0.5
+            Burn: -0.5
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
@@ -142,7 +162,16 @@
               Brute: -4
               Burn: -4
               Toxin: -4
-
+        - !type:HealthChange
+          conditions:
+          - !type:OrganType
+            type: Slime
+          - !type:Temperature
+            max: 150.0
+          damage:
+            types:
+              Poison: 4
+            
 - type: reagent
   id: Dermaline
   name: reagent-name-dermaline
@@ -242,12 +271,31 @@
             Burn: -0.5
       - !type:HealthChange
         conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: 1
+      - !type:HealthChange
+        conditions:
         - !type:ReagentThreshold
           min: 20
         damage:
           types:
             Asphyxiation: 1
             Poison: 1
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 20
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -2
+          groups:
+            Brute: -0.5
+            Burn: -0.5
       - !type:AdjustReagent
         reagent: Lexorin
         amount: -2
@@ -410,6 +458,16 @@
         damage:
           types:
             Poison: 3
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -6
+          groups:
+            Brute: -0.5
+            Burn: -0.5
       - !type:ChemVomit
         probability: 0.15
         conditions:
@@ -464,7 +522,17 @@
         damage:
           types:
             Poison: 0.5
-
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -1
+          groups:
+            Brute: -0.5
+            Burn: -0.5
+            
 - type: reagent
   id: PulpedBananaPeel
   name: reagent-name-pulped-banana-peel
@@ -527,6 +595,13 @@
         damage:
           types:
             Poison: -4
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: 8
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
@@ -550,6 +625,17 @@
         damage:
           types:
             Poison: 3
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -6
+          groups:
+            Brute: -0.5
+            Burn: -0.5
+            
       - !type:GenericStatusEffect
         key: Stun
         time: 3.0
@@ -603,6 +689,13 @@
             Brute: -1
           types:
             Poison: -0.5 ##Should be about what it was when it healed the toxin group
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: 1
 
 - type: reagent
   id: Lipozine
@@ -638,7 +731,14 @@
             Toxin: -2
             Airloss: -2
             Brute: -2
-
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: 4
+            
 - type: reagent
   id: Ultravasculine
   name: reagent-name-ultravasculine
@@ -661,12 +761,31 @@
             Brute: 0.5
       - !type:HealthChange
         conditions:
+        - !type:OrganType
+          type: Slime
+        - !type:ReagentThreshold
+          min: 0
+          max: 30
+        damage:
+          types:
+            Poison: 6
+      - !type:HealthChange
+        conditions:
         - !type:ReagentThreshold
           min: 30
         damage:
           groups:
             Toxin: -1
             Brute: 3
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        - !type:ReagentThreshold
+          min: 30
+        damage:
+          types:
+            Poison: 2
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
