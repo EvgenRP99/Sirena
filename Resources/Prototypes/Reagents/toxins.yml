@@ -15,6 +15,10 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
             Poison: 2
@@ -24,10 +28,10 @@
           type: Slime
         damage:
           types:
-            Poison: -4
+            Poison: -2
           groups:
-            Brute: -0.5
-            Burn: -0.5
+            Brute: -0.35
+            Burn: -0.35
 
 - type: reagent
   id: CarpoToxin
@@ -46,24 +50,32 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
             Poison: 4
-      - !type:PopupMessage
-        type: Local
-        visualType: MediumCaution
-        messages: [ "generic-reagent-effect-burning-insides" ]
-        probability: 0.33
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Slime
         damage:
           types:
-            Poison: -8
+            Poison: -4
           groups:
-            Brute: -0.5
-            Burn: -0.5
+            Brute: -0.35
+            Burn: -0.35
+      - !type:PopupMessage
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
+        type: Local
+        visualType: MediumCaution
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.33
 
 - type: reagent
   id: ChloralHydrate
@@ -93,19 +105,25 @@
         - !type:ReagentThreshold
           reagent: ChloralHydrate
           min: 20
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
             Poison: 1.5
       - !type:HealthChange
         conditions:
+        - !type:ReagentThreshold
+          reagent: ChloralHydrate
+          min: 20
         - !type:OrganType
           type: Slime
         damage:
           types:
-            Poison: -3
+            Poison: -1.5
           groups:
-            Brute: -0.5
-            Burn: -0.5
+            Brute: -0.35
+            Burn: -0.35
 
 - type: reagent
   id: Mold
@@ -119,9 +137,23 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
-            Poison: 1
+            Poison: 1.0
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -1.0
+          groups:
+            Brute: -0.35
+            Burn: -0.35
       - !type:ChemCauseRandomDisease
         conditions:
         - !type:ReagentThreshold
@@ -135,16 +167,6 @@
           - Plague
           - TongueTwister
           - MemeticAmirmir
-      - !type:HealthChange
-        conditions:
-        - !type:OrganType
-          type: Slime
-        damage:
-          types:
-            Poison: -2
-          groups:
-            Brute: -0.5
-            Burn: -0.5
 
 - type: reagent
   id: PolytrinicAcid
@@ -170,19 +192,55 @@
       - !type:HealthChange
         scaleByQuantity: true
         ignoreResistances: false
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           groups:
             Caustic: 0.5
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          groups:
+            Caustic: -0.5
+            Brute: -0.15
+            Burn: -0.15
       - !type:Scream
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         probability: 0.3
   metabolisms:
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           groups:
             Caustic: 2
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          groups:
+            Caustic: -2
+            Brute: -0.35
+            Burn: -0.35
       - !type:PopupMessage
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         type: Local
         visualType: Large
         messages: [ "generic-reagent-effect-burning-insides" ]
@@ -205,19 +263,55 @@
       - !type:HealthChange
         scaleByQuantity: true
         ignoreResistances: false
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           groups:
             Caustic: 0.3
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          groups:
+            Caustic: -0.3
+            Brute: -0.15
+            Burn: -0.15
       - !type:Scream
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         probability: 0.2
   metabolisms:
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           groups:
             Caustic: 2
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          groups:
+            Caustic: -2
+            Brute: -0.35
+            Burn: -0.35
       - !type:PopupMessage
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         type: Local
         visualType: Large
         messages: [ "generic-reagent-effect-burning-insides" ]
@@ -247,34 +341,61 @@
       - !type:HealthChange
         scaleByQuantity: true
         ignoreResistances: false
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           groups:
             Caustic: 0.1
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          groups:
+            Caustic: -0.1
+            Brute: -0.15
+            Burn: -0.15
       - !type:Scream
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         probability: 0.1
   metabolisms:
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
             Poison: 2
-      - !type:PopupMessage
-        type: Local
-        visualType: Large
-        messages: [ "generic-reagent-effect-burning-insides" ]
-        probability: 0.33
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Slime
         damage:
           types:
-            Poison: -4
+            Poison: -2
           groups:
-            Brute: -0.5
-            Burn: -0.5
-            
+            Brute: -0.35
+            Burn: -0.35
+      - !type:PopupMessage
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.33
+
 - type: reagent
   id: UnstableMutagen
   name: reagent-name-unstable-mutagen
@@ -362,6 +483,9 @@
         conditions:
         - !type:ReagentThreshold
           min: 45
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           groups:
             Brute: 2
@@ -369,16 +493,17 @@
             Airloss: 2
       - !type:HealthChange
         conditions:
-        - !type:OrganType
-          type: Slime
         - !type:ReagentThreshold
           min: 45
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
-          types:
-            Poison: -1
           groups:
-            Brute: -0.5
-            Burn: -0.5
+            Brute: 1.65
+            Toxin: -2
+            Airloss: 2
+            Burn: -0.35
       - !type:PopupMessage
         type: Local
         messages: [ "histamine-effect-light-itchiness" ]
@@ -432,6 +557,10 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
             Poison: 6
@@ -441,11 +570,11 @@
           type: Slime
         damage:
           types:
-            Poison: -12
+            Poison: -6
           groups:
-            Brute: -0.5
-            Burn: -0.5
-            
+            Brute: -0.35
+            Burn: -0.35
+
 - type: reagent
   id: VentCrud
   name: reagent-name-vent-crud
@@ -456,24 +585,32 @@
   metabolisms:
     Poison:
       effects:
-        - !type:HealthChange
-          damage:
-            types:
-              Poison: 2
-        - !type:ChemCauseDisease ##Since this mostly just comes from the event you won't ingest that much
-          causeChance: 0.6
-          disease: VentCough
-        - !type:HealthChange
-          conditions:
-          - !type:OrganType
-            type: Slime
-          damage:
-            types:
-              Poison: -4
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
+        damage:
+          types:
+            Poison: 2
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Poison: -2
           groups:
-            Brute: -0.5
-            Burn: -0.5
-            
+            Brute: -0.35
+            Burn: -0.35
+      - !type:ChemCauseDisease ##Since this mostly just comes from the event you won't ingest that much
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
+        causeChance: 0.6
+        disease: VentCough
+
 - type: reagent
   id: Corpium
   name: reagent-name-corpium
@@ -509,16 +646,6 @@
         damage:
           types:
             Poison: 2
-      - !type:HealthChange
-        conditions:
-        - !type:OrganType
-          type: Slime
-        damage:
-          types:
-            Poison: -4
-          groups:
-            Brute: -0.5
-            Burn: -0.5
       - !type:AdjustReagent
         conditions:
         - !type:OrganType
@@ -545,17 +672,7 @@
         damage:
           types:
             Poison: 6
-      - !type:HealthChange
-        conditions:
-        - !type:OrganType
-          type: Slime
-        damage:
-          types:
-            Poison: -12
-          groups:
-            Brute: -0.5
-            Burn: -0.5
-            
+
 - type: reagent
   id: Pax
   name: reagent-name-pax

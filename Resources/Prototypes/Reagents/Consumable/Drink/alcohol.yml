@@ -108,11 +108,22 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
-          min: 5
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
-          groups:
+          types:
             Caustic: 1
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+        damage:
+          types:
+            Caustic: -1
+          groups:
+            Brute: -0.35
+            Burn: -0.35
       - !type:ChemVomit
         probability: 0.04
         conditions:
@@ -192,6 +203,10 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
             Poison: 1
@@ -201,11 +216,12 @@
           type: Slime
         damage:
           types:
-            Poison: -2
+            Poison: -1
           groups:
-            Brute: -0.5
-            Burn: -0.5
-            
+            Brute: -0.35
+            Burn: -0.35
+
+
 - type: reagent
   id: Rum
   name: reagent-name-rum
@@ -595,14 +611,7 @@
             Brute: -1
             Airloss: -1
             Toxin: -1
-      - !type:HealthChange
-        conditions:
-        - !type:OrganType
-          type: Slime
-        damage:
-          types:
-            Poison: 2
-            
+
 - type: reagent
   id: DriestMartini
   name: reagent-name-driest-martini
@@ -930,6 +939,10 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
             Poison: 1
@@ -939,11 +952,12 @@
           type: Slime
         damage:
           types:
-            Poison: -2
+            Poison: -1
           groups:
-            Brute: -0.5
-            Burn: -0.5
-            
+            Brute: -0.35
+            Burn: -0.35
+
+
 - type: reagent
   id: Patron
   name: reagent-name-patron

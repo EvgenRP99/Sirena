@@ -39,6 +39,10 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
             Poison: 1
@@ -48,10 +52,10 @@
           type: Slime
         damage:
           types:
-            Poison: -2
+            Poison: -1
           groups:
-            Brute: -0.5
-            Burn: -0.5
+            Brute: -0.35
+            Burn: -0.35
 
 #TODO: restore eyesight
 #if(..())

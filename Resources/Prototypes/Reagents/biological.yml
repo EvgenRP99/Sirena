@@ -48,6 +48,10 @@
     Medicine:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           groups:
             Burn: -5
@@ -59,9 +63,14 @@
         conditions:
         - !type:OrganType
           type: Slime
+          shouldHave: false
         damage:
+          groups:
+            Burn: -5
+            Brute: -5
+            Toxin: 2
           types:
-            Poison: 4
+            Bloodloss: -5
   # Just in case you REALLY want to water your plants
   plantMetabolism:
   - !type:PlantAdjustWater

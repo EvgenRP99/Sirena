@@ -1,5 +1,5 @@
 - type: reagent
-  id: Artecalcet_erp
+  id: Artecalcet_sirena
   name: reagent-name-artecalcet
   desc: reagent-desc-artecalcet
   physicalDesc: reagent-physical-desc-shiny
@@ -13,7 +13,7 @@
             Poison: 0.75
             
 - type: reagent
-  id: Arteicog_erp
+  id: Arteicog_sirena
   name: reagent-name-arteicog
   desc: reagent-desc-arteicog
   physicalDesc: reagent-physical-desc-shiny
@@ -22,14 +22,14 @@
     Poison:
       effects:
       - !type:AdjustReagent
-        reagent: Arteicog_erp
+        reagent: Arteicog_sirena
         amount: 0.45
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
-          reagent: Arteicog_erp
+          reagent: Arteicog_sirena
           max: 0.5
-        reagent: Arteicog_erp
+        reagent: Arteicog_sirena
         amount: -1
       - !type:PopupMessage
         conditions:
@@ -60,7 +60,7 @@
         type: Add
     
 - type: reagent
-  id: Gadoiprinim_erp
+  id: Gadoiprinim_sirena
   name: reagent-name-gadoiprinim
   desc: reagent-desc-gadoiprinim
   physicalDesc: reagent-physical-desc-shiny
@@ -69,14 +69,14 @@
     Poison:
       effects:
       - !type:AdjustReagent
-        reagent: Gadoiprinim_erp
+        reagent: Gadoiprinim_sirena
         amount: 0.45
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
-          reagent: Gadoiprinim_erp
+          reagent: Gadoiprinim_sirena
           max: 0.5
-        reagent: Gadoiprinim_erp
+        reagent: Gadoiprinim_sirena
         amount: -1
       - !type:PopupMessage
         type: Local
@@ -85,7 +85,7 @@
         probability: 0.25
 
 - type: reagent
-  id: Vinikefastatin_erp
+  id: Vinikefastatin_sirena
   name: reagent-name-vinikefastatin
   desc: reagent-desc-vinikefastatin
   physicalDesc: reagent-physical-desc-shiny
@@ -94,14 +94,14 @@
     Poison:
       effects:
       - !type:AdjustReagent
-        reagent: Vinikefastatin_erp
+        reagent: Vinikefastatin_sirena
         amount: 0.45
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
-          reagent: Vinikefastatin_erp
+          reagent: Vinikefastatin_sirena
           max: 0.5
-        reagent: Vinikefastatin_erp
+        reagent: Vinikefastatin_sirena
         amount: -1
       - !type:PopupMessage
         type: Local
@@ -110,7 +110,7 @@
         probability: 0.25
 
 - type: reagent
-  id: Aphrodisiac_erp
+  id: Aphrodisiac_sirena
   name: reagent-name-aphrodisiac
   desc: reagent-desc-aphrodisiac
   physicalDesc: reagent-physical-desc-silver
@@ -119,20 +119,20 @@
     Poison:
       effects:
       - !type:AdjustReagent
-        reagent: Aphrodisiac_erp
+        reagent: Aphrodisiac_sirena
         amount: 0.45
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
-          reagent: Aphrodisiac_erp
+          reagent: Aphrodisiac_sirena
           max: 0.5
-        reagent: Aphrodisiac_erp
+        reagent: Aphrodisiac_sirena
         amount: -1
       - !type:PopupMessage
         type: Local
         conditions:
         - !type:ReagentThreshold
-          reagent: Aphrodisiac_erp
+          reagent: Aphrodisiac_sirena
           max: 15
         visualType: Medium
         messages: ["aphrodisiac-effect-1", "aphrodisiac-effect-2", "aphrodisiac-effect-3", "aphrodisiac-effect-4"]
@@ -141,7 +141,7 @@
         type: Local
         conditions:
         - !type:ReagentThreshold
-          reagent: Aphrodisiac_erp
+          reagent: Aphrodisiac_sirena
           min: 15
           max: 30
         visualType: Medium
@@ -151,9 +151,9 @@
         type: Local
         conditions:
         - !type:ReagentThreshold
-          reagent: Aphrodisiac_erp
+          reagent: Aphrodisiac_sirena
           min: 30
-          max: 100
+          max: 60
         visualType: Large
         messages: ["aphrodisiac-effect-9", "aphrodisiac-effect-10", "aphrodisiac-effect-11", "aphrodisiac-effect-12"]
         probability: 0.25
@@ -161,8 +161,8 @@
         type: Local
         conditions:
         - !type:ReagentThreshold
-          reagent: Aphrodisiac_erp
-          min: 100
+          reagent: Aphrodisiac_sirena
+          min: 60
         visualType: Large
         messages: ["aphrodisiac-effect-13", "aphrodisiac-effect-14", "aphrodisiac-effect-15"]
         probability: 0.25
@@ -170,21 +170,21 @@
         type: Pvs
         conditions:
         - !type:ReagentThreshold
-          reagent: Aphrodisiac_erp
-          min: 100
+          reagent: Aphrodisiac_sirena
+          min: 60
         visualType: Medium
         messages: ["aphrodisiac-effect-16", "aphrodisiac-effect-17", "aphrodisiac-effect-18"]
         probability: 0.3
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
-          reagent: Aphrodisiac_erp
-          min: 100
+          reagent: Aphrodisiac_sirena
+          min: 60
       - !type:GenericStatusEffect
         conditions:
         - !type:ReagentThreshold
-          reagent: Aphrodisiac_erp
-          min: 100
+          reagent: Aphrodisiac_sirena
+          min: 60
         key: ForcedSleep
         component: ForcedSleeping
         refresh: false
