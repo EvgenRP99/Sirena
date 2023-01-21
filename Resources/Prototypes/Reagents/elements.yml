@@ -146,6 +146,10 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
         damage:
           types:
             Poison: 2
@@ -155,10 +159,11 @@
           type: Slime
         damage:
           types:
-            Poison: -4
+            Poison: -2
           groups:
-            Brute: -0.5
-            Burn: -0.5
+            Brute: -0.35
+            Burn: -0.35  
+
 
 - type: reagent
   id: Potassium

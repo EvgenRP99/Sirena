@@ -1,5 +1,73 @@
 - type: entity
-  id: Aphrodisiac_erp_ChemistryBottle
+  id: Artecalcet_sirena_ChemistryBottle
+  name: jar of artecalcet
+  description: Silver-based drug. Used in all mind-altering drugs. In its pure form it causes poisoning.
+  parent: ChemistryEmptyBottle04
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Artecalcet_sirena
+          Quantity: 50
+  - type: Tag
+    tags:
+    - Bottle
+
+- type: entity
+  id: Arteicog_sirena_ChemistryBottle
+  name: jar of arteicog
+  description: Artecalcet-based drug. Causes a sedative effect when exposed to a reasonable person. When overdosed, it puts the target to sleep.
+  parent: ChemistryEmptyBottle04
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Arteicog_sirena
+          Quantity: 50
+  - type: Tag
+    tags:
+    - Bottle
+
+- type: entity
+  id: Gadoiprinim_sirena_ChemistryBottle
+  name: jar of gadoiprinim
+  description: Artecalcet-based drug. Stimulates sexual arousal.
+  parent: ChemistryEmptyBottle04
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Gadoiprinim_sirena
+          Quantity: 50
+  - type: Tag
+    tags:
+    - Bottle
+
+- type: entity
+  id: Vinikefastatin_sirena_ChemistryBottle
+  name: jar of vinikefastatin
+  description: Artecalcet-based drug. A drug that activates certain parts of the brain.
+  parent: ChemistryEmptyBottle04
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Vinikefastatin_sirena
+          Quantity: 50
+  - type: Tag
+    tags:
+    - Bottle
+
+- type: entity
+  id: Aphrodisiac_sirena_ChemistryBottle
   name: jar of aphrodisiac
   description: Artecalcet-based drug. Stimulates sexual arousal.
   parent: ChemistryEmptyBottle04
@@ -9,7 +77,7 @@
       drink:
         maxVol: 50
         reagents:
-        - ReagentId: Aphrodisiac_erp
+        - ReagentId: Aphrodisiac_sirena
           Quantity: 50
   - type: Tag
     tags:

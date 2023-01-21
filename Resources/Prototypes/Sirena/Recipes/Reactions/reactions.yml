@@ -1,17 +1,17 @@
 - type: reaction
-  id: Artecalcet_erp
+  id: Artecalcet_sirena
   reactants:
     Aluminium:
       amount: 2 
     Silver:
       amount: 3
   products:
-    Artecalcet_erp: 5
+    Artecalcet_sirena: 5
 
 - type: reaction
-  id: Arteicog_erp
+  id: Arteicog_sirena
   reactants:
-    Artecalcet_erp:
+    Artecalcet_sirena:
       amount: 1
     Radium:
       amount: 1
@@ -19,12 +19,12 @@
       amount: 5
       catalyst: true
   products:
-    Arteicog_erp: 2
+    Arteicog_sirena: 2
     
 - type: reaction
-  id: Gadoiprinim_erp
+  id: Gadoiprinim_sirena
   reactants:
-    Artecalcet_erp:
+    Artecalcet_sirena:
       amount: 1
     Potassium:
       amount: 1
@@ -32,12 +32,12 @@
       amount: 5
       catalyst: true
   products:
-    Gadoiprinim_erp: 2
+    Gadoiprinim_sirena: 2
 
 - type: reaction
-  id: Vinikefastatin_erp
+  id: Vinikefastatin_sirena
   reactants:
-    Artecalcet_erp:
+    Artecalcet_sirena:
       amount: 1
     Iron:
       amount: 1
@@ -45,4 +45,4 @@
       amount: 5
       catalyst: true
   products:
-    Vinikefastatin_erp: 2
+    Vinikefastatin_sirena: 2
