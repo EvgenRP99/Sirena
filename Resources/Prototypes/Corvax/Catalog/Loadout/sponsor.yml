@@ -75,3 +75,14 @@
   # entity: ClothingHeadsetSecurity
   # sponsorOnly: true
   # whitelistJobs: [HeadOfSecurity]
+- type: loadout
+  id: OldHoSHeadsetLoadout
+  entity: ClothingHeadsetSecurity
+  sponsorOnly: true
+  whitelistJobs: [HeadOfSecurity]
+
+# ken41k
+- type: loadout
+  id: DivineWatchLoadout
+  entity: ClothingHandsWatchDivine
+  sponsorOnly: true
