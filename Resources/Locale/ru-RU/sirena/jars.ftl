@@ -1,16 +1,16 @@
-ent-Aphrodisiac_sirena_ChemistryBottle = бутылочка артекальцета
+ent-Artecalcet_sirena_ChemistryBottle = бутылочка артекальцета
     .desc = Препарат на основе серебра. Используется во всех наркотиках, изменяющих сознание. В чистом виде вызывает отравление.
     .suffix = { "Сирена" }
 
-ent-Aphrodisiac_sirena_ChemistryBottle = бутылочка артеикога
+ent-Arteicog_sirena_ChemistryBottle = бутылочка артеикога
     .desc = Препарат на основе артекальцета. При воздействии на разумного человека вызывает седативный эффект. При передозировке усыпляет цель.
     .suffix = { "Сирена" }
 
-ent-Aphrodisiac_sirena_ChemistryBottle = бутылочка гадоипринима
+ent-Gadoiprinim_sirena_ChemistryBottle = бутылочка гадоипринима
     .desc = Препарат на основе артекальцета. Уменьшает болевые ощущения при введении внутрь.
     .suffix = { "Сирена" }
 
-ent-Aphrodisiac_sirena_ChemistryBottle = бутылочка виникефастатина
+ent-Vinikefastatin_sirena_ChemistryBottle = бутылочка виникефастатина
     .desc = Препарат на основе артекальцета. Препарат активизирующий некоторые отделы мозга.
     .suffix = { "Сирена" }
 
